@@ -45,24 +45,28 @@ ServerSeekerV2 is written in Rust allowing it to be blazingly fast and memory sa
 - Advanced MOTD Parsing. Weather a servers description is really complex and has lots of formatting or a simple string,
   it will be built into a string with Minecraft style text formatting codes applied in place. both raw descriptions and
   formatted descriptions are saved in the database.
-- Automatic opting out. Unlike the original ServerSeeker where you had to join a discord server and request your server
+- ~~Automatic opting out. Unlike the original ServerSeeker where you had to join a discord server and request your server
   be removed. You can automatically remove yourself from the database and prevent further scans by modifying your
-  servers MOTD.
+  servers MOTD.~~
 - Player and mod tracking. Find servers that have specific players online or servers running specific forge mods. (or both at the same time!)
 - Self Hostable. Host your own scanning instance and find your own servers! (See below for warnings against running this
   on a residential network)
 - Country tracking. If enabled, tracks which country and Autonomous System a server is from.
 
-# For people just looking to not be scanned anymore
+# ~~For people just looking to not be scanned anymore~~
 
-You can add "§b§d§f§d§b" to the end of your servers description by changing the ``server.properties`` file. This change
-is invisible to the client and won't change the look of your servers description *in most cases.*
+~~You can add "§b§d§f§d§b" to the end of your servers description by changing the ``server.properties`` file. This change~~
+~~is invisible to the client and won't change the look of your servers description *in most cases.*~~
 
-Additionally having this in your servers description **Will remove you from the database as well** if you were
-previously scanned. The next time your server is found, it will automatically remove it from the database. Easy!
+~~Additionally having this in your servers description **Will remove you from the database as well** if you were~~
+~~previously scanned. The next time your server is found, it will automatically remove it from the database. Easy!~~
 
-If something is wrong, or you're still being scanned after adding the above string to your servers description join
-my [Matrix Space](https://matrix.to/#/#projects:funtimes909.xyz) and message ``@me:funtimes909.xyz`` directly.
+~~If something is wrong, or you're still being scanned after adding the above string to your servers description join~~
+~~my [Matrix Space](https://matrix.to/#/#projects:funtimes909.xyz) and message ``@me:funtimes909.xyz`` directly.~~
+
+hmmmm i wonder why a server griefing tool has a filter in it.
+
+this has been removed in my version
 
 ## FAQ
 
@@ -70,13 +74,13 @@ my [Matrix Space](https://matrix.to/#/#projects:funtimes909.xyz) and message ``@
 - A: ServerSeekerV2 is a faster version of the original ServerSeeker, it pings around 4 billion IPv4 addresses every few
   hours and attempts to join Minecraft servers on the ones that respond. This process is repeated over and over again.
 
-- Q: How can I get my server removed?
-- A: See above method or join my [Matrix Space](https://matrix.to/#/#projects:funtimes909.xyz) and ping
-  ``@me:funtimes909.xyz``.
+- ~~Q: How can I get my server removed?~~
+- ~~A: See above method or join my [Matrix Space](https://matrix.to/#/#projects:funtimes909.xyz) and ping
+  ``@me:funtimes909.xyz``.~~
 
 - Q: I have a dynamic IP address, how can I get my server removed?
-- A: I can't remove your IP address every time it changes, you will have to rely on using the MOTD method described
-  above or use something like NFTables or UFW to block connections from my IP address
+- A: I can't remove your IP address every time it changes, ~~you will have to rely on using the MOTD method described
+  above or~~ use something like NFTables or UFW to block connections from my IP address
 
 - Q: How can I protect my server?
 - A: Enable a whitelist for your server, a whitelist allows only specified players to join your server, run

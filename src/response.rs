@@ -112,10 +112,11 @@ impl Server {
 
 	// Has the user opted out of scanning?
 	pub fn check_opt_out(&self) -> bool {
-		match &self.description_formatted {
-			Some(description) => String::from(description).contains("§b§d§f§d§b"),
-			None => false,
-		}
+		// match &self.description_formatted {
+		// 	Some(description) => String::from(description).contains("§b§d§f§d§b"),
+		// 	None => false,
+		// }
+		return false;
 	}
 
 	#[rustfmt::skip]
