@@ -1,8 +1,8 @@
 [package]
 name = "ServerSeekerV2"
 version = "0.1.0"
-edition = "2021"
-rust-version = "1.80.0"
+edition = "2024"
+rust-version = "1.85.0"
 repository = "https://git.funtimes909.xyz/ServerSeekerV2/ServerSeekerV2"
 authors = ["Funtimes909"]
 
